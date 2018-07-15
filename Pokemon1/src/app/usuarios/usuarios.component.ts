@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-usuarios',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsuariosComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
+
+  @Output() dioClick = new EventEmitter();
 
   ngOnInit() {
+
   }
+
+  clickVisitar() {
+    this.dioClick.emit(1);
+  }
+
 
 }

@@ -1,3 +1,51 @@
-<p>
-  contenedor works!
-</p>
+<div class="row">
+  <div class="col-sm-12">
+    <br>
+  </div>
+
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-3">
+    <img
+      src="https://scontent.fuio2-1.fna.fbcdn.net/v/t1.0-9/36890864_2023880064348768_1598154453213511680_n.jpg?_nc_cat=0&oh=efc672e16401378675b9da0a6a121afe&oe=5BE47A76"
+      alt="fotoperfil"
+      class="imagen-perfil" width="50" height="50"> Gabriela Cuascota
+  </div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-6">
+    <br>
+    <br>
+    <div class="input-group input-group-sm mb-3">
+      <input type="buscar" class="form-control" placeholder="Buscar Usuario, Modelo papá ó Modelo hijo"
+             aria-label="Buscar">
+    </div>
+  </div>
+  <div class="col-sm-2">
+    <br>
+    <br>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+  </div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-10">
+    <app-usuarios></app-usuarios>
+  </div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div *ngIf="mostrarComponente===true" class="col-sm-10">
+    <app-entrenadores></app-entrenadores>
+  </div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-10" *ngIf="cargarEntrenador()">
+    <app-pokemones></app-pokemones>
+  </div>
+  <div class="col-sm-1"></div>
+</div>

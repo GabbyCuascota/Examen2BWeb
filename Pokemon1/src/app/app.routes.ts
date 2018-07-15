@@ -20,15 +20,15 @@ export const RUTAS_APP: Routes = [
     component: TransferenciaComponent,
   },
   {
-    path: 'transferenciaselec',
+    path: 'tseleccion',
     component: TseleccionComponent,
   },
   {
-    path: 'transferenciaseleca',
+    path: 'tselecciona',
     component: TseleccionaComponent,
   },
   {
-    path: 'transferenciaconf',
+    path: 'tconfirmacion',
     component: TconfirmacionComponent,
   }
 ]
