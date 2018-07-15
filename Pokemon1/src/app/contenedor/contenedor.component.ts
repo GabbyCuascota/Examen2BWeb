@@ -17,7 +17,7 @@ export class ContenedorComponent implements OnInit {
   clickUsuario: UsuariosComponent;
   mostrarComponente = false;
 
-  cargarEntrenador(evento) {
+  cargarEquipofutbol(evento) {
     console.log('evento', evento);
     this.mostrarComponente = true;
     if (this.clickUsuario.dioClick.emit(1)) {

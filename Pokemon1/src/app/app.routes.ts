@@ -5,6 +5,7 @@ import {TransferenciaComponent} from "./transferencia/transferencia.component";
 import {TseleccionComponent} from "./tseleccion/tseleccion.component";
 import {TseleccionaComponent} from "./tselecciona/tselecciona.component";
 import {TconfirmacionComponent} from "./tconfirmacion/tconfirmacion.component";
+import {UsuariosComponent} from "./usuarios/usuarios.component";
 
 export const RUTAS_APP: Routes = [
   {
@@ -30,5 +31,9 @@ export const RUTAS_APP: Routes = [
   {
     path: 'tconfirmacion',
     component: TconfirmacionComponent,
+  },
+  {
+    path: 'usuarios',
+    component: UsuariosComponent,
   }
 ]
