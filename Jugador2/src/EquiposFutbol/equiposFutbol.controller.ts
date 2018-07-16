@@ -27,7 +27,7 @@ export class EquiposFutbolController {
     @Res() response
   ) {
     const equipos_futbol = this._equiposFutbolService.mostrarEn();
-    return response.send(equipos_futbol1);
+    //return response.send(equipos_futbol1);
   }
 
   @UsePipes(new EquiposFutbolPipe(EQUIPOFUTBOL_SCHEMA))

@@ -1,16 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {Module} from '@nestjs/common';
+import {AppController} from './app.controller';
+import {AppService} from './app.service';
 
-import { AppComponent } from './app.component';
+import {JugadorController} from "../Jugador/Jugador.controller";
+import {AutorizacionController} from "../autorizacion/autorizacion.controller";
+import {EquiposFutbolController} from "../EquiposFutbol/equiposFutbol.controller";
 
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+@Module({
+  imports: [],
+  controllers: [AppController, EquiposFutbolController, JugadorController, AutorizacionController],
+  providers: [AppService, EquiposFutbolController, JugadorController],
 })
-export class AppModule { }
+export class AppModule {
+}
