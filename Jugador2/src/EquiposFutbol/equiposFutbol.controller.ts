@@ -36,9 +36,9 @@ export class EquiposFutbolController {
     @Body(new EquiposFutbolPipe(EQUIPOFUTBOL_SCHEMA))
       nuevoEquipoFutbol
   ) {
-    const EntrenadorCreado = this._equiposFutbolService.crearEquipoFutbol(nuevoEquipoFutbol);
+    const EquipoFutbolCreado = this._equiposFutbolService.crearEquiposFutbol(nuevoEquipoFutbol);
 
-    if (EntrenadorCreado) {
+    if (EquipoFutbolCreado) {
       return nuevoEquipoFutbol;
     } else {
       throw new PeticionErroneaException(

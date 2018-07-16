@@ -1,6 +1,6 @@
 import {Body, Controller, Get, HttpCode, Param, Post, Put, Req, Res, UsePipes} from '@nestjs/common';
 import {JugadorService} from "./jugador.service";
-import {JugadorPipe} from "../Jugador/jugador.pipe";
+import {JugadorPipe} from "../JugadorPipe/jugador.pipe";
 import {PeticionNotfoundException} from "../excepciones/peticion-notfound.exception";
 import {PeticionErroneaException} from "../excepciones/peticion-erronea.exception";
 import {error} from "util";
